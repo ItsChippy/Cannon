@@ -48,7 +48,7 @@ namespace Cannon
             cannonLineColor = Color.Red;
 
             //angle of the cannon's "trajectory" line
-            cannonLineAngle = -100;
+            cannonLineAngle = 45;
         }
 
         protected override void Update(GameTime gameTime)
@@ -80,7 +80,7 @@ namespace Cannon
             var distance = (int)Vector2.Distance(startPos, endPos);
             var texture = new Texture2D(spriteBatch.GraphicsDevice, distance, thickness);
 
-            //colors line white
+            //colors line to whatever color the user input
             var data = new Color[distance * thickness];
             for (int i = 0; i < data.Length; i++) 
             {
