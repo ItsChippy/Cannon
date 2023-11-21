@@ -59,6 +59,8 @@ namespace Cannon
             cannonLineThickness = 5;
             cannonLineColor = Color.Red;
 
+
+            //instantiating cannon variables
             cannonStartPos = new Vector2(cannonLineStartPos.X - 50, cannonLineStartPos.Y + 50);
             cannonThickness = 20;
             cannonColor = Color.White;
